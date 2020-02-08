@@ -1,0 +1,56 @@
+.map {
+
+    .sidebar {   
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 360px;
+        background: #fff;
+        z-index: 10;
+        box-shadow: 0 5px 28px 0 rgba(206, 206, 206, 0.47);
+
+        .header {
+            position: relative;
+            top: 60px;
+            height: 40px;
+            width: 100%;
+            background: #020a12d1;
+        }
+
+        .main {
+            position: relative;
+            top: 70px;
+            
+            .scrollarea {
+                height: calc(100vh - 120px);
+            }
+
+            .list {
+
+                &__item {
+                    padding: 15px;
+                    border-bottom: 1px solid #ece9e9;
+                    margin-top: 10px;
+
+                    .image {
+                        width: 320px;
+                        height: 160px;
+                        background-position: center center;
+                        border-radius: 5px;
+                    }
+
+                    .name {
+                        font-size: 1.2em;
+                        padding: 15px 5px 5px;
+                    }
+
+                    .category {
+                        padding: 0px 5px;
+                        color: #30363d;
+                    }
+                }
+            }
+        }
+    }
+}
