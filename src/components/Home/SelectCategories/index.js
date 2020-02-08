@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import "./index.scss";
 
@@ -8,7 +10,8 @@ class SelectCategories extends Component {
         theater: false,
         culturalHeritage: false,
         viewingPlatforms: false,
-        exhibitionHalls: false
+        exhibitionHalls: false,
+        botanicalGarden: false
     }
 
     changeCategoryStatus(prop) {
@@ -38,7 +41,7 @@ class SelectCategories extends Component {
                                     this.changeCategoryStatus("museum")
                                 }}
                                 className={this.state.museum ? "active": ""}>
-                                <img src="/home/accept.svg" alt="accept" />
+                                    <FontAwesomeIcon icon={faCheck} />
                             </button>
                         </div>
                     </div>
@@ -48,15 +51,15 @@ class SelectCategories extends Component {
                                 backgroundImage: `url('/home/categories/museum.jpg')`
                             }}></div>
                         <div className="title">
-                            <h3>Музеи</h3>
+                            <h3>Театры</h3>
                         </div>
                         <div className="status">
                             <button 
                                 onClick={() => {
-                                    this.changeCategoryStatus("museum")
+                                    this.changeCategoryStatus("theater")
                                 }}
-                                className={this.state.museum ? "active": ""}>
-                                <img src="/home/accept.svg" alt="accept" />
+                                className={this.state.theater ? "active": ""}>
+                                    <FontAwesomeIcon icon={faCheck} />
                             </button>
                         </div>
                     </div>
@@ -66,15 +69,15 @@ class SelectCategories extends Component {
                                 backgroundImage: `url('/home/categories/museum.jpg')`
                             }}></div>
                         <div className="title">
-                            <h3>Музеи</h3>
+                            <h3>Культурное наследие</h3>
                         </div>
                         <div className="status">
                             <button 
                                 onClick={() => {
-                                    this.changeCategoryStatus("museum")
+                                    this.changeCategoryStatus("culturalHeritage")
                                 }}
-                                className={this.state.museum ? "active": ""}>
-                                <img src="/home/accept.svg" alt="accept" />
+                                className={this.state.culturalHeritage ? "active": ""}>
+                                    <FontAwesomeIcon icon={faCheck} />
                             </button>
                         </div>
                     </div>
@@ -84,15 +87,15 @@ class SelectCategories extends Component {
                                 backgroundImage: `url('/home/categories/museum.jpg')`
                             }}></div>
                         <div className="title">
-                            <h3>Музеи</h3>
+                            <h3>Смотровые площадки</h3>
                         </div>
                         <div className="status">
                             <button 
                                 onClick={() => {
-                                    this.changeCategoryStatus("museum")
+                                    this.changeCategoryStatus("viewingPlatforms")
                                 }}
-                                className={this.state.museum ? "active": ""}>
-                                <img src="/home/accept.svg" alt="accept" />
+                                className={this.state.viewingPlatforms ? "active": ""}>
+                                    <FontAwesomeIcon icon={faCheck} />
                             </button>
                         </div>
                     </div>
@@ -102,18 +105,39 @@ class SelectCategories extends Component {
                                 backgroundImage: `url('/home/categories/museum.jpg')`
                             }}></div>
                         <div className="title">
-                            <h3>Музеи</h3>
+                            <h3>Выставочные залы</h3>
                         </div>
                         <div className="status">
                             <button 
                                 onClick={() => {
-                                    this.changeCategoryStatus("museum")
+                                    this.changeCategoryStatus("exhibitionHalls")
                                 }}
-                                className={this.state.museum ? "active": ""}>
-                                <img src="/home/accept.svg" alt="accept" />
+                                className={this.state.exhibitionHalls ? "active": ""}>
+                                    <FontAwesomeIcon icon={faCheck} />
                             </button>
                         </div>
                     </div>
+                    <div className="grid__item">
+                        <div className="image"
+                            style={{
+                                backgroundImage: `url('/home/categories/museum.jpg')`
+                            }}></div>
+                        <div className="title">
+                            <h3>Ботанические сады</h3>
+                        </div>
+                        <div className="status">
+                            <button 
+                                onClick={() => {
+                                    this.changeCategoryStatus("botanicalGarden")
+                                }}
+                                className={this.state.botanicalGarden ? "active": ""}>
+                                    <FontAwesomeIcon icon={faCheck} />
+                            </button>
+                        </div>
+                    </div>                    
+                </div>
+                <div className="submit">
+                    <button>Продолжить</button>
                 </div>
             </section>)
     }
