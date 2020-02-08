@@ -1,0 +1,1 @@
+export const CHANGE_PLACES = "CHANGE_PLACES";

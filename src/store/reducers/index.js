@@ -1,15 +1,15 @@
-import * as types from '../../constants/Auth/index';
+import * as types from '../constants/index';
 
 const initialState = {
-    isAuthorized: false
+    places: []
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case types.CHANGE_IS_AUTHORIZED:
+        case types.CHANGE_PLACES:
             return {
                 ...state,
-                isAuthorized: action.payload
+                places: action.payload
             };
 
 
