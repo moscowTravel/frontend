@@ -1,4 +1,22 @@
 .home {
+    .group-status {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        width: 200px;
+        border-radius: 23px;
+        color: #020a12;
+        font-size: 1.1em;
+        box-shadow: 0 1px 7px 2px rgb(2, 10, 18);
+        font-weight: bold;
+
+        .css-yk16xz-control {
+            overflow: hidden;
+            border-radius: 5px;
+            border: 0px solid;
+            padding: 7px;
+        }
+    }
 
     .categories {
         position: relative;

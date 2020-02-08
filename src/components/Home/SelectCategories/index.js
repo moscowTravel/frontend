@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+import Select from 'react-select';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,6 +25,23 @@ class SelectCategories extends Component {
     render() {
         return (
             <section className="categories container">
+                <div className="group-status">
+                    <Select
+                        options={[{
+                            value: "single",
+                            label: "В одиночку"
+                        }, {
+                            value: "withFamily",
+                            label: "С семьей"
+                        }, {
+                            value: "smallGroup",
+                            label: "Группой 5-7"
+                        }]}
+                        defaultValue={"single"}
+                        defaultInputValue={"В одиночку"}
+                        onChange={(values) => {}}
+                    />
+                </div>
                 <div className="title">
                     <h2>Выберите предпочтения</h2>
                 </div>
