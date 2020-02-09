@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/frontend/static/css/main.1148e9f6.chunk.css",
-    "main.js": "/frontend/static/js/main.11224f20.chunk.js",
-    "main.js.map": "/frontend/static/js/main.11224f20.chunk.js.map",
-    "runtime-main.js": "/frontend/static/js/runtime-main.348b76d0.js",
-    "runtime-main.js.map": "/frontend/static/js/runtime-main.348b76d0.js.map",
-    "static/js/2.b3f01657.chunk.js": "/frontend/static/js/2.b3f01657.chunk.js",
-    "static/js/2.b3f01657.chunk.js.map": "/frontend/static/js/2.b3f01657.chunk.js.map",
-    "index.html": "/frontend/index.html",
-    "precache-manifest.d916b6917c20370afacdcc9399f08314.js": "/frontend/precache-manifest.d916b6917c20370afacdcc9399f08314.js",
-    "service-worker.js": "/frontend/service-worker.js",
-    "static/css/main.1148e9f6.chunk.css.map": "/frontend/static/css/main.1148e9f6.chunk.css.map"
+    "main.css": "/moscowTravel/moscowTravel.github.io/frontend/static/css/main.1148e9f6.chunk.css",
+    "main.js": "/moscowTravel/moscowTravel.github.io/frontend/static/js/main.12b675e4.chunk.js",
+    "main.js.map": "/moscowTravel/moscowTravel.github.io/frontend/static/js/main.12b675e4.chunk.js.map",
+    "runtime-main.js": "/moscowTravel/moscowTravel.github.io/frontend/static/js/runtime-main.655d43f1.js",
+    "runtime-main.js.map": "/moscowTravel/moscowTravel.github.io/frontend/static/js/runtime-main.655d43f1.js.map",
+    "static/js/2.b3f01657.chunk.js": "/moscowTravel/moscowTravel.github.io/frontend/static/js/2.b3f01657.chunk.js",
+    "static/js/2.b3f01657.chunk.js.map": "/moscowTravel/moscowTravel.github.io/frontend/static/js/2.b3f01657.chunk.js.map",
+    "index.html": "/moscowTravel/moscowTravel.github.io/frontend/index.html",
+    "precache-manifest.94115b38215ca01663ab40ae44752040.js": "/moscowTravel/moscowTravel.github.io/frontend/precache-manifest.94115b38215ca01663ab40ae44752040.js",
+    "service-worker.js": "/moscowTravel/moscowTravel.github.io/frontend/service-worker.js",
+    "static/css/main.1148e9f6.chunk.css.map": "/moscowTravel/moscowTravel.github.io/frontend/static/css/main.1148e9f6.chunk.css.map"
   }
 }
