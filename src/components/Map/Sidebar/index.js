@@ -17,10 +17,13 @@ class SidebarMap extends Component {
                                 this.props.items.map(item => {
                                     return (
                                         <div key={item.id} className="list__item">
-                                        <div className="image" style={{
+                                            {item.img ? (<div className="image" style={{
                                                 backgroundImage: item.img
                                             }}>
-                                        </div>
+                                        </div>): (
+                                            <img src="/notFound.png" alt="not found" />
+                                        )}
+                                        
                                         <div className="name">
                                             {item.name}
                                         </div>

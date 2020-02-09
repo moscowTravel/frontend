@@ -9,6 +9,18 @@ import withRedux from './withRedux';
 
 class BusinessPlanPage extends Component {
 
+	state = {
+		userPosition: []
+	}
+
+	// componentDidMount() {
+	// 	navigator.geolocation.getCurrentPosition((position) => {
+	// 		this.setState({
+	// 			userPosition: [position.coords.latitude, position.coords.longitude]
+	// 		})
+	// 	});
+	// }
+
 	render() {
 
 		return (
@@ -19,6 +31,7 @@ class BusinessPlanPage extends Component {
 						<MapSidebar items={this.props.places} />
 						<Map width={window.innerWidth - 5} height={window.innerHeight - 5}
 							defaultState={{ center: [55.75, 37.57], zoom: 12 }}>
+
 							<Clusterer
 								options={{
 									preset: 'islands#invertedVioletClusterIcons',
@@ -27,6 +40,9 @@ class BusinessPlanPage extends Component {
 							>{
 									this.props.places.map(i => {
 										return <Placemark key={i.id}
+											onClick={(e) => {
+												this.setState({})
+											}}
 											geometry={i.location}
 											options={{
 												preset: 'islands#circleIcon'
@@ -35,6 +51,12 @@ class BusinessPlanPage extends Component {
 									})
 								}</Clusterer>
 
+							{
+								this.state.userPosition ? (
+									<Placemark geometry={this.state.userPosition} />)
+									: ("")
+
+							}
 						</Map>
 					</YMaps>
 				</main>
