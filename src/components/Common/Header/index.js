@@ -15,7 +15,7 @@ class Header extends Component {
 				<div className="header-cover">
 					<div className="header__logo">
 						<div onClick={e => this.onStartAgain()}>
-							<span>Logo</span>
+							<img src="/logo.png"/>
 						</div>
 					</div>
 					<div className="header__menu">

@@ -10,16 +10,27 @@ import withRedux from './withRedux';
 class BusinessPlanPage extends Component {
 
 	state = {
+		places: [],
 		userPosition: []
 	}
 
-	// componentDidMount() {
-	// 	navigator.geolocation.getCurrentPosition((position) => {
-	// 		this.setState({
-	// 			userPosition: [position.coords.latitude, position.coords.longitude]
-	// 		})
-	// 	});
-	// }
+	componentDidMount() {
+		this.setState({
+			places: this.props.places
+		});
+
+		navigator.geolocation.getCurrentPosition((position) => {
+			this.setState({
+				userPosition: [position.coords.latitude, position.coords.longitude]
+			});
+
+			this.props.changePlaces(
+				this.state.places.sort(p => {
+					return Math.sqrt((p.location[0] - position.coords.latitude) ** 2 + (p.location[0] - position.coords.longitude) ** 2);
+				}).slice(0, 6)
+			)
+		});
+	}
 
 	render() {
 
@@ -40,9 +51,6 @@ class BusinessPlanPage extends Component {
 							>{
 									this.props.places.map(i => {
 										return <Placemark key={i.id}
-											onClick={(e) => {
-												this.setState({})
-											}}
 											geometry={i.location}
 											options={{
 												preset: 'islands#circleIcon'

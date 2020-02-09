@@ -25,6 +25,7 @@ class SelectCategories extends Component {
     }
 
     async sumbit() {
+        // const data = await fetch('/poi.json');
         const data = await fetch('/poi.json');
         const jsonData = await data.json();
         const places = jsonData.items.map(i => {
