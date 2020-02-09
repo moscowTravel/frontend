@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/moscowTravel/frontend/static/css/main.1148e9f6.chunk.css",
+    "main.js": "/moscowTravel/frontend/static/js/main.040dfb18.chunk.js",
+    "main.js.map": "/moscowTravel/frontend/static/js/main.040dfb18.chunk.js.map",
+    "runtime-main.js": "/moscowTravel/frontend/static/js/runtime-main.878f73ad.js",
+    "runtime-main.js.map": "/moscowTravel/frontend/static/js/runtime-main.878f73ad.js.map",
+    "static/js/2.b3f01657.chunk.js": "/moscowTravel/frontend/static/js/2.b3f01657.chunk.js",
+    "static/js/2.b3f01657.chunk.js.map": "/moscowTravel/frontend/static/js/2.b3f01657.chunk.js.map",
+    "index.html": "/moscowTravel/frontend/index.html",
+    "precache-manifest.842ee9f46d1897aaf0127bb582bc0d0b.js": "/moscowTravel/frontend/precache-manifest.842ee9f46d1897aaf0127bb582bc0d0b.js",
+    "service-worker.js": "/moscowTravel/frontend/service-worker.js",
+    "static/css/main.1148e9f6.chunk.css.map": "/moscowTravel/frontend/static/css/main.1148e9f6.chunk.css.map"
+  }
+}
